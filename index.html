@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Fresh and Best,fresh,best,fresh and best">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gemini">
+    <title>Fresh and Best</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/color-switcher.css">
+    <link rel="stylesheet" href="css/menu_sideslide.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+    .bs-example{
+        margin: 20px;
+    }
+    .accordion .fa{
+        margin-right: 0.5rem;
+    }
+
+
+
+
+
+
+    </style>
+    <script>
+    $(document).ready(function(){
+        // Add minus icon for collapse element which is open by default
+        $(".collapse.show").each(function(){
+        	$(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+        });
+
+        // Toggle plus minus icon on show hide of collapse element
+        $(".collapse").on('show.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hide.bs.collapse', function(){
+        	$(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+        });
+    });
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+    <!-- Header Section Start -->
+    <header id="slider-area">
+        <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.png"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="lni-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#slider-area">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#portfolios">Product List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#contact">Call to Action</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Carousel Section -->
+        <div id="carousel-area">
+            <div id="carousel-slider" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-slider" data-slide-to="1"></li>
+                    <li data-target="#carousel-slider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img src="img/slider/bg-1.jpg" alt="">
+
+                        <div class="carousel-caption text-left">
+                            <h3 class="wow fadeInRight" data-wow-delay="0.3s">FNB</h3>
+                            <h2 class="wow fadeInRight" data-wow-delay="0.4s">Fresh and Best</h2>
+                            <h4 class="wow fadeInRight" data-wow-delay="0.5s">MAKE TRADE EASE WITH US</h4>
+                            <!-- <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInRight" data-wow-delay="1.0s">Download</a>
+                            <a href="#" class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="1.4s">Get Started!</a> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider/bg-2.jpeg" alt="">
+                        <div class="carousel-caption text-center">
+                            <h4 class="wow fadeInDown" data-wow-delay="0.3s">FNB Making Trade Ease</h4>
+                            <h2 class="wow bounceIn" data-wow-delay="0.4s">Fast and Secure</h2>
+                            <h3 class="wow fadeInUp" data-wow-delay="0.5s">We Deliver Good</h3>
+                            <!-- <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInUp" data-wow-delay="1.2s">View Works</a> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider/bg-3.jpg" alt="">
+                        <div class="carousel-caption text-right">
+                            <h4 class="wow fadeInDown" data-wow-delay="0.3s">We maintain tradition of our products</h4>
+                            <h2 class="wow fadeInRight" data-wow-delay="0.4s">Vegetables keep you healthy</h2>
+                            <h3 class="wow fadeInUp" data-wow-delay="0.5s">Do or Diet, eat right, future bright</h3>
+                            <!-- <a href="#" class="btn btn-lg btn-border wow fadeInUp" data-wow-delay="0.9s">Purchase</a> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/slider/bg-4.jpeg" alt="">
+                        <div class="carousel-caption text-down">
+                            <h3 class="wow fadeInRight" data-wow-delay="0.3s">What we see as our success is your hope -
+                                FNB</h3>
+                            <h2 class="wow fadeInRight" data-wow-delay="0.4s">We Learned It By Watching Trading!</h2>
+                            <h4 class="wow fadeInRight" data-wow-delay="0.5s">We are connected</h4>
+                            <!-- <a href="#" class="btn btn-lg btn-common btn-effect wow fadeInRight" data-wow-delay="1.0s">Download</a>
+                            <a href="#" class="btn btn-lg btn-border wow fadeInRight" data-wow-delay="1.4s">Get Started!</a> -->
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#carousel-slider" role="button" data-slide="prev">
+                    <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-left"></i></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-slider" role="button" data-slide="next">
+                    <span class="carousel-control" aria-hidden="true"><i class="lni-chevron-right"></i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Call to Action Start -->
+    <section id="about" class="call-action section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <!--                <p class="section-subtitle">We are delivering fresh fruits and vegetables in overall Puducherry</p>-->
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="cta-trial text-center">
+                        <p>Fresh and Best is an emerging Exporter and Importer of a variety of food products based in
+                            Pondicherry and Tamilnadu (India). Our company was set up recently in August 2020. We are
+                            trading a variety of vegetables, fruits, and other goods between the states. Now, We are
+                            planning to develop our supply to over the world. We desire to maintain the quality and
+                            customer satisfaction of on-time delivery.</p>
+                        <p>FNB is a startup run by young graduates having good ground knowledge of agriculture and
+                            Agriculture products. FNB is a farmer-based company so only we can maintain the best quality
+                            in the market. All our work will take place openly and honestly of ordered gave us the
+                            valuable trust and expectation of our reputed client</p>
+                        <!--                        <a href="#" class="btn btn-common btn-effect">Purchase Now!</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section">
+        <!--        <div class="contaxiner">-->
+        <div class="section-header">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-subtitle">FNB is the farmer-based company We know all the aspects of products and services
+                that's why We Providing fresh and best products to our valuable clients without compromising our
+                traditions.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-xs-12">
+                <div class="bs-example">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <p class="btn2 btn2-common" data-toggle="collapse"
+                                       data-target="#collapseOne"><i class="lni-cup"></i> <span>Our Focus</span> -
+                                        We focus on providing the most comprehensive global market coverage
+                                        at competitive prices ..
+                                    </p>
+                                </h2>
+                            </div>
+                            <!--                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"-->
+                            <!--                                 data-parent="#accordionExample">-->
+                            <!--                                <div class="card-body">-->
+                            <!--                                    <p>Deliver + fast = we are faster than you can imagine</p>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <p class="btn2 btn2-common" data-toggle="collapse"
+                                       data-target="#collapseTwo"><i class="lni-eye"></i> <span>Our Vision </span>- we
+                                        trade all over the world at fast and securely..
+                                    </p>
+                                </h2>
+                            </div>
+                            <!--                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"-->
+                            <!--                                 data-parent="#accordionExample">-->
+                            <!--                                <div class="card-body">-->
+                            <!--                                    <p>Extraordinary service for extraordinary customers.</p>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <p class="btn2 btn2-common" data-toggle="collapse"
+                                       data-target="#collapseThree"><i class="lni-archive"></i><span>Our Pledge </span> - To
+                                        provided fresh and best products without compromising our tradition.
+                                    </p>
+                                </h2>
+                            </div>
+                            <!--                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"-->
+                            <!--                                 data-parent="#accordionExample">-->
+                            <!--                                <div class="card-body">-->
+                            <!--                                    <p>I believe inspiring trust with transparency and tenacity is the keystone to doing-->
+                            <!--                                        business.</p>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-xs-12 text-right">
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-12 text-right">
+                <div class="bs-example">
+                    <img src="img/flow.jpeg" style="height:250px" alt="">
+                </div>
+            </div>
+        </div>
+        <!--        </div>-->
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="call-action section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.6s">
+                        <div class="icon color-3">
+                            <i class="lni-users"></i>
+                        </div>
+                        <h4>Customer satisfaction</h4>
+                        <p>FNB providing extraordinary service for our extraordinary client's.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.2s">
+                        <div class="icon color-1">
+                            <i class="lni-cart-full"></i>
+                        </div>
+                        <h4>Fast & Secure Delivery</h4>
+                        <p>We are delivering faster than you can imagine our products with our pledge.</p>
+                    </div>
+                </div>
+                <!--                <div class="col-lg-4 col-md-6 col-xs-12">-->
+                <!--                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.4s">-->
+                <!--                        <div class="icon color-2">-->
+                <!--                            <i class="lni-paypal"></i>-->
+                <!--                        </div>-->
+                <!--                        <h4>Cash on delivery</h4>-->
+                <!--                        <p>We bring the store to your door.</p>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="col-lg-4 col-md-6 col-xs-12">-->
+
+                <!--                </div>-->
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.8s">
+                        <div class="icon color-4">
+                            <i class="lni-laptop-phone"></i>
+                        </div>
+                        <h4>Competitive price</h4>
+                        <p>our price range is reasonable and competitive to others in marketplace.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="item-boxes services-item wow fadeInDown" data-wow-delay="0.2s">
+                        <div class="icon color-1">
+                            <i class="lni-bus"></i>
+                        </div>
+                        <h4>Transparent services</h4>
+                        <p>we believing,inspiring with transparency is the keystone of doing successful
+                            business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Services Section End -->
+
+     <!-- Call To Action Section Start -->
+    <section id="cta" class="section" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12">
+            <div class="cta-text">
+              <h5>We ensure 24*7 customer service...</h5>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 text-right">
+            <a href="#" class="btn btn-border">  <i class="lni-phone"></i> 24*7 Support </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call To Action Section Start -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolios" class="section">
+        <!-- Container Starts -->
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products List</h2>
+                <p class="section-subtitle">we are collecting our products form farms so it’s give a natural energy for
+                    your health.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Portfolio Controller/Buttons -->
+                    <div class="controls text-center">
+                        <a class="filter btn btn-common btn-effect" data-filter="all">
+                            All
+                        </a>
+                        <a class="filter active btn btn-common btn-effect" data-filter=".vegetables">
+                            Vegetables
+                        </a>
+                        <a class="filter btn btn-common btn-effect" data-filter=".fruits">
+                            Fruits
+                        </a>
+                        <a class="filter btn btn-common btn-effect" data-filter=".lettuce">
+                            Lettuce
+                        </a>
+                    </div>
+                    <!-- Portfolio Controller/Buttons Ends-->
+                </div>
+            </div>
+
+
+            <!-- Portfolio Recent Projects -->
+            <div id="portfolio" class="row">
+                <div class="col-lg-4 col-md-6 col-xs-12 mix vegetables">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/poteto.jpeg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/poteto.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">It is a good source of vitamins B1, B3 and B6 and minerals such as
+                                            potassium, phosphorus and magnesium, and contains folate, pantothenic acid
+                                            and riboflavin.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix vegetables">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/tometo.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/tometo.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Tomatoes and tomato products are rich sources of folate, vitamin C,
+                                            and potassium. Relative to phytonutrients, the most abundant in tomatoes are
+                                            the carotenoids.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix vegetables">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/onion.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/onion.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Onions contain antioxidants and compounds that fight inflammation,
+                                            decrease triglycerides and reduce cholesterol levels — all of which may
+                                            lower heart disease risk. </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix vegetables">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/Drumstrick.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/ledisfinger.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Moringa(Drumstrick) is taken by mouth for "tired blood" (anemia),
+                                            arthritis and other joint pain (rheumatism), asthma, cancer, constipation,
+                                            diabetes, diarrhea, seizures, stomach pain, stomach and intestinal ulcers,
+                                            intestinal spasms, headache, heart problems, high blood pressure, kidney
+                                            stones, symptoms of menopause, thyroid disorders, and infections.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-xs-12 mix vegetables">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/ledisfinger.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/ledisfinger.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">It is packed with folate, niacin, Vitamin C, Vitamin E and Vitamin K.
+                                            Other than these, it is also rich in calcium, copper, iron, magnesium,
+                                            manganese, phosphorous and zinc.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/apple.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/apple.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Apples are low in sodium, fat, and cholesterol. They don't offer
+                                            protein, but apples are a good source of vitamin C and fiber. One medium
+                                            apple has about: 100 calories.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix vegetables">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/kaliflower.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/kaliflower.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">As far as nutrition goes, cauliflower is high in vitamin C and a good
+                                            source of folate. It's fat free and cholesterol free and also is low in
+                                            sodium content.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix vegetables">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/pagarkai.jpeg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/kaliflower.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Regularly eating bittergourd as a part of your daily diet is known to
+                                            prvent skin ailments like psoriasis and fungal infections like ringworm and
+                                            athletes foot. - Drinking bitter gourd juice serves as a healthy way to
+                                            detox the body.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix vegetables">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/pumkin-white.png" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/kaliflower.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Pumpkin is a great source of potassium and beta-carotene, which is a
+                                            carotenoid that converts to vitamin A. It also contains some minerals
+                                            including calcium and magnesium, as well as vitamins E, C and some B
+                                            vitamins. </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix vegetables">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/brinjal.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/kaliflower.jpg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">It is loaded with vitamin C, K, and B6 and an ample amount of
+                                            potassium, manganese, and fiber. Eggplant or brinjal also known as aubergine
+                                            is loaded with goodness.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-xs-12 mix lettuce">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/coriander.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/keerai.png"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Coriander or cilantro is a wonderful source of dietary fiber,
+                                            manganese, iron and magnesium as well.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/mango.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/mango.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Mangoes contain high level of vitamin C, fibre and pectin making it a
+                                            perfect fruit that helps in controlling high cholesterol level. Another
+                                            benefit of eating mangoes is that it cleanses your skin from deep inside
+                                            your body</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix lettuce">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/muttacose.jpeg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/muttacose.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Half a cup of cooked cabbage has about a third the vitamin C you need
+                                            for the day. It also gives you doses of fiber, folate, potassium, magnesium,
+                                            vitamins A and K, and more.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix lettuce">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/karuveppilai.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/muttacose.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Curry leaves are a rich source of vitamin A, vitamin B, vitamin C,
+                                            vitamin B2, calcium, and iron, apart from a heavy distinctive odor and
+                                            pungent taste.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix lettuce">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/pudina-ela.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/muttacose.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">It is heaped with Vitamins A, C and B -complex which enhances healthy
+                                            skin and bolsters the immunity. </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix lettuce">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/valai-ilai.jpeg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/muttacose.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="#">Valai-ilai</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/orange.jpeg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/orange.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">The vitamin C in oranges helps your body in lots of ways: Protects
+                                            your cells from damage. Helps your body make collagen, a protein that heals
+                                            wounds and gives you smoother skin.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/mosambi.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/orange.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">The high content of Vitamin C in mosambi or sweet lime helps in
+                                            alleviating inflammation and swelling and hence play a pivotal role in
+                                            treating symptoms of osteoarthritis and rheumatoid arthritis.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/watermelan.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/orange.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Watermelon is a good source of vitamin C and contains decent amounts
+                                            of potassium, copper, vitamin B5, and vitamin A (from beta carotene).</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/muskmelon.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/orange.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">muskmelon being rich in vitamin C, fibre and sodium makes a perfect
+                                            summer fruit.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/lemon.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/orange.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Lemons contain about 31 grams of Vitamin C, which is nearly double
+                                            the amount of Vitamin C needed in your daily diet. Along with boosting
+                                            immunity, this burst of Vitamin C can reduce your risk of stroke and heart
+                                            disease with regular consumption.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/bananas.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/orange.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Bananas, rich in potassium and fiber and low in sodium, are an
+                                            important component of heart-healthy diets like DASH that aims for about
+                                            4,700 mg dietary potassium daily.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/Redbananas.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/orange.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Red bananas are rich in vitamins C and B6.These nutrients are
+                                            essential for a healthy immune system.One small red banana provides 9% and
+                                            28% of the RDIs for vitamins C and B6, respectively. Vitamin C boosts
+                                            immunity by strengthening the cells of your immune system</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mix fruits">
+                    <div class="portfolio-item">
+                        <div class="shot-item">
+                            <img src="img/vegitable/coconut.jpg" alt=""/>
+                            <div class="single-content">
+                                <div class="fancy-table">
+                                    <div class="table-cell">
+                                        <!-- <div class="zoom-icon">
+                                          <a class="lightbox" href="img/vegitable/orange.jpeg"><i class="lni-zoom-in item-icon"></i></a>
+                                        </div> -->
+                                        <a href="">Coconut , rich in copper and iron, which help form red blood cells,
+                                            as well as selenium, an important antioxidant that protects your cells.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container Ends -->
+    </section>
+    <!-- Portfolio Section Ends -->
+
+
+    <!-- Counter Section Start -->
+    <div class="counters section bg-defult">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-2 ">
+                    <div class="facts-item">
+                        <div class="icon">
+                            <a href="tel:+919688304022"><i class="lni-mobile"></i></a>
+                        </div>
+                        <div class="fact-count">
+                            <h3>Call</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4 ">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 ">
+                    <div class="facts-item">
+                        <div class="icon">
+                            <a href="https://api.whatsapp.com/send?phone=916385246440&text=Hi"><i
+                                    class="lni-comments"></i></a>
+                        </div>
+                        <div class="fact-count">
+                            <h3>Whatsapp</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section">
+        <div class="contact-form">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Are easy to find, so a visitor can quickly get in touch should they need
+                        it</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-xs-12">
+                        <div class="contact-block">
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" ng-model="username"
+                                                   ng-change="submitForm()" name="name" placeholder="Your Name" required
+                                                   data-error="Please enter your name">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" placeholder="Your Number" ng-model="number"
+                                                   ng-change="submitForm()" class="form-control" name="name" required
+                                                   data-error="Please enter your email">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" ng-model="message" placeholder="Your Message"
+                                                      ng-change="submitForm()" rows="7" data-error="Write your message"
+                                                      required></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div>
+                                            <!-- <a href="https://wa.me/919787188428" target="_blank" color="#4dc247" id="" class="q8c6tt-0 jvFDcV">Whatsapp</a> -->
+                                            <a href="https://api.whatsapp.com/send?phone=916385246440&text= Hi +{{data}}"
+                                               class="btn btn-common btn-effect" class="share-btn whatsapp">Send Message
+                                                Whatsapp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-xs-12">
+                        <div class="contact-deatils">
+                            <!-- Content Info -->
+                            <div class="contact-info_area">
+                                <div class="contact-info">
+                                    <i class="lni-map-marker"></i>
+                                    <h5>Location</h5>
+                                    <p>ECR Main Road , Near Kootakuppam Roundtana , Pondicherry - 605001</p>
+                                </div>
+                                <!-- Content Info -->
+                                <div class="contact-info">
+                                    <i class="lni-google-plus"></i>
+                                    <h5>E-mail</h5>
+                                    <p>freshndbest@gmail.com</p>
+                                </div>
+                                <!-- Content Info -->
+                                <div class="contact-info">
+                                    <i class="lni-phone"></i>
+                                    <h5>Phone</h5>
+                                    <p>+91 6385 246 440</p>
+                                </div>
+                                <!-- Icon -->
+                                <ul class="footer-social">
+                                    <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
+                                    <!--                                    <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>-->
+                                    <li><a class="linkedin" href="https://www.instagram.com/Freshndbest/"><i
+                                            class="lni-linkedin-fill"></i></a></li>
+                                    <li><a class="google-plus" href=""><i class="lni-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+</div>
+<!-- Map Section Start -->
+<section id="google-map-area">
+    <div class="row justify-content-center">
+        <div class="container-fluid">
+
+            <div class="col-12 padding-0">
+                <object style="border:0; height: 450px; width: 100%;"
+                        data="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1756.2465411311362!2d79.5761666813639!3d10.47011712138619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sECR%20Main%20Road%20%2C%20Near%20Kootakuppam%20Roundtana%20%2C%20Pondicherry%20-%20605001!5e0!3m2!1sen!2sin!4v1633161352290!5m2!1sen!2sin"></object>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Map Section End -->
+
+<!-- Footer Section Start -->
+<footer class="main-footer">
+    <strong><a href="#">Gemini</a>.</strong>
+    <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> 0.1
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top">
+    <i class="lni-arrow-up"></i>
+</a>
+<div id="loader">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="js/jquery-min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/classie.js"></script>
+<!--    <script src="js/color-switcher.js"></script>-->
+<script src="js/jquery.mixitup.js"></script>
+<script src="js/nivo-lightbox.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery.vide.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js">
+</body>
+</html>
